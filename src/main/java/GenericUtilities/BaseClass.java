@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.objectRepo.CartPage;
@@ -66,8 +67,8 @@ public class BaseClass {
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
 		dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
 		
-		dc.setCapability("appPackage", "");
-		dc.setCapability("appActivity", "");
+		dc.setCapability("appPackage", "com.hm.goe");
+		dc.setCapability("appActivity", ".app.home.HomeActivity");
 		
 		URL u = new URL("http://localhost:4723");
 		driver = new AndroidDriver(u,dc);
@@ -86,6 +87,12 @@ public class BaseClass {
 		lp = new LoginPage(driver);
 		sp = new SearchPage(driver);
 		susp = new SustainabilityPage(driver);
+		
+	}
+	
+	@BeforeMethod
+	public void login() {
+		lp.login(gutil, "India/English");
 	}
 	
 	@AfterClass
