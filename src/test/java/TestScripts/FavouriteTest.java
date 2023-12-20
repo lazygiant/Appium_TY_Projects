@@ -26,7 +26,6 @@ public class FavouriteTest extends BaseClass
  
  
  gutil.scroll("Retro camp rewind ❤️");
- 
  pcp.clickonTrouser();
  pp.cartandfo();
  cp.cart();
