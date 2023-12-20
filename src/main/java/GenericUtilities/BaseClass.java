@@ -21,6 +21,7 @@ import com.objectRepo.LoginPage;
 import com.objectRepo.SearchPage;
 import com.objectRepo.SustainabilityPage;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -72,7 +73,7 @@ public class BaseClass {
 		
 		URL u = new URL("http://localhost:4723");
 		driver = new AndroidDriver(u,dc);
-		
+	
 		sdriver=driver;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		

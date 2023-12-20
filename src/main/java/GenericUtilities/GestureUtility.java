@@ -51,10 +51,10 @@ AndroidDriver driver;
 		
 	}
 	
-	public void swipe(WebElement element, double percentage, int left, int top, int height, int width, String direction, double percent) {
+	public void swipe(WebElement element, double percentage, int left, int top, int height, int width, String direction) {
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of
 			("left", left, "top", top, "width", width, "height", height,
-			    "direction", direction,"percent", percent
+			    "direction", direction,"percent", percentage
 			));
 		
 	}
@@ -65,10 +65,23 @@ AndroidDriver driver;
 		
 	}
 	
-	public void scroll(String value) {
+	public void scrollToText(String value) {
 		driver.findElement(AppiumBy.androidUIAutomator
 		("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+value+"\"));"));
 		
+	}
+	
+	public void scrollToId(String id) {
+		driver.findElement(AppiumBy.androidUIAutomator
+		("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+				+ "(new UiSelector().resourceIdMatches(\"" + id + "\"));"));
+	}
+	
+	public void scrollByCordinates(int left, int top, int width, int height, String direction, double percent ) {
+		boolean canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", 
+		ImmutableMap.of("left", left, "top", top, "width", width, "height", height,"direction", direction,
+			    "percent", percent
+			));
 	}
 	
 	public void searchAction() {

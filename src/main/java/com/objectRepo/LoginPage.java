@@ -34,7 +34,7 @@ public class LoginPage {
 	}
 
 	public void login(GestureUtility gutil, String value) {
-		gutil.scroll(value);
+		gutil.scrollToText(value);
 		country.click();
 		notify.click();
 		
