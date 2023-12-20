@@ -48,7 +48,9 @@ public class BaseClass {
 	public void startServer() {
 		
 		File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
-		 service = new AppiumServiceBuilder().withAppiumJS(f).
+		 	
+		
+		service = new AppiumServiceBuilder().withAppiumJS(f).
 				withIPAddress("127.0.0.1").usingPort(4723).
 				withTimeout(Duration.ofSeconds(300)).build();
 		
