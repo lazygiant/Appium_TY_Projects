@@ -18,6 +18,9 @@ import com.objectRepo.FilterPage;
 import com.objectRepo.FollowUsPage;
 import com.objectRepo.InboxPage;
 import com.objectRepo.LoginPage;
+import com.objectRepo.NavigationPage;
+import com.objectRepo.PopularcategoryPage;
+import com.objectRepo.ProductPage;
 import com.objectRepo.SearchPage;
 import com.objectRepo.SustainabilityPage;
 
@@ -43,12 +46,17 @@ public class BaseClass {
 	public LoginPage lp;
 	public SearchPage sp;
 	public SustainabilityPage susp;
+	public PopularcategoryPage pcp;
+	public ProductPage pp;
+	public NavigationPage np;
+	
 	
 	@BeforeSuite
 	public void startServer() {
 		
-		File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
-		 	
+		//File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
+	 File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
+ 	
 		
 		service = new AppiumServiceBuilder().withAppiumJS(f).
 				withIPAddress("127.0.0.1").usingPort(4723).
@@ -65,9 +73,12 @@ public class BaseClass {
 		String automation = futil.dataFromPropertyFile("AUTOMATION_NAME");
 		
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
+		//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy M32 5G");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
-		dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
+		//dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
+		dc.setCapability(MobileCapabilityType.UDID, "RZCRA06JH3F");
+
 		
 		dc.setCapability("appPackage", "com.hm.goe");
 		dc.setCapability("appActivity", ".app.home.HomeActivity");
@@ -89,7 +100,9 @@ public class BaseClass {
 		lp = new LoginPage(driver);
 		sp = new SearchPage(driver);
 		susp = new SustainabilityPage(driver);
-		
+		pcp=new PopularcategoryPage(driver);
+		pp=new ProductPage(driver);
+		np= new NavigationPage(driver);
 	}
 	
 	@BeforeMethod
