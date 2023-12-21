@@ -32,10 +32,7 @@ public class FavouriteTest extends BaseClass
  cp.movetofav();
  np.clickonBackbtn();
  pcp.clickOnMyfov();
- String actual = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='High-waisted joggers']")).getText();
- String expected="High-waisted joggers";
- System.out.println(actual);
- Assert.assertEquals(actual, expected);
+ vp.verifyfavourite("Flared leggings");
  
  }
 }
