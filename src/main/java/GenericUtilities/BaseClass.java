@@ -12,16 +12,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.objectRepo.CartPage;
-import com.objectRepo.ChatboxPage;
-import com.objectRepo.FavoritePage;
-import com.objectRepo.FilterPage;
 import com.objectRepo.FollowUsPage;
 import com.objectRepo.InboxPage;
 import com.objectRepo.LoginPage;
+import com.objectRepo.NavigationPage;
+import com.objectRepo.PopularcategoryPage;
+import com.objectRepo.ProductPage;
 import com.objectRepo.SearchPage;
 import com.objectRepo.SustainabilityPage;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -36,20 +35,24 @@ public class BaseClass {
 	public FileUtility futil = new FileUtility();
 	public AppiumDriverLocalService service;
 	public CartPage cp;
-	public ChatboxPage cbp;
-	public FavoritePage favp;
-	public FilterPage fp;
 	public FollowUsPage fup;
 	public InboxPage ip;
 	public LoginPage lp;
 	public SearchPage sp;
 	public SustainabilityPage susp;
+	public PopularcategoryPage pcp;
+	public ProductPage pp;
+	public NavigationPage np;
+	
 	
 	@BeforeSuite
 	public void startServer() {
 		
-		File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
-		 service = new AppiumServiceBuilder().withAppiumJS(f).
+	File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
+	 //File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
+ 	
+		
+		service = new AppiumServiceBuilder().withAppiumJS(f).
 				withIPAddress("127.0.0.1").usingPort(4723).
 				withTimeout(Duration.ofSeconds(300)).build();
 		
@@ -65,8 +68,11 @@ public class BaseClass {
 		
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
+		//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy M32 5G");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
 		dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
+		//dc.setCapability(MobileCapabilityType.UDID, "RZCRA06JH3F");
+
 		
 		dc.setCapability("appPackage", "com.hm.goe");
 		dc.setCapability("appActivity", ".app.home.HomeActivity");
@@ -80,15 +86,14 @@ public class BaseClass {
 		gutil = new GestureUtility(driver);
 		dutil = new DriverUtility(driver);
 		cp = new CartPage(driver);
-		cbp = new ChatboxPage(driver);
-		favp = new FavoritePage(driver);
-		fp = new FilterPage(driver);
 		fup = new FollowUsPage(driver);
 		ip = new InboxPage(driver);
 		lp = new LoginPage(driver);
 		sp = new SearchPage(driver);
 		susp = new SustainabilityPage(driver);
-		
+		pcp=new PopularcategoryPage(driver);
+		pp=new ProductPage(driver);
+		np= new NavigationPage(driver);
 	}
 	
 	@BeforeMethod

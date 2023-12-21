@@ -48,7 +48,7 @@ public class SustainabilityPage {
 	public void sustainability(GestureUtility gutil) {
 		option.click();
 		sustain.click();
-		int count=-1;
+		int count=0;
 		
 //		for (WebElement head : heading) {
 ////			//gutil.scrollByCordinates(2221, 547, 901,547, direction, 3.0);
