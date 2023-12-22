@@ -1,10 +1,8 @@
 package TestScripts;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import GenericUtilities.BaseClass;
-import io.appium.java_client.AppiumBy;
 
 public class CartTest extends BaseClass
 {
@@ -24,9 +22,7 @@ public class CartTest extends BaseClass
     pcp.clickOnTops();
     pp.addtocart();
     cp.cart();
-    String actul = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Rhinestone-strap body']")).getText();
-    String Expected="Rhinestone-strap body";
-    Assert.assertEquals(actul, Expected);
+   vp.verify("Rib-knit collared top");
     
   }
 }

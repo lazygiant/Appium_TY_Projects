@@ -1,37 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-12-21T10:56:38 IST" name="Default suite" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
+=======
+  <suite started-at="2023-12-21T11:24:21 IST" name="Default suite" finished-at="2023-12-21T11:25:12 IST" duration-ms="51578">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-12-21T10:56:38 IST" name="Default test" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
       <class name="TestScripts.testscript1">
         <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:37 IST" name="startServer" finished-at="2023-12-21T10:56:38 IST" duration-ms="145" status="PASS">
+=======
+    <test started-at="2023-12-21T11:24:21 IST" name="Default test" finished-at="2023-12-21T11:25:12 IST" duration-ms="51578">
+      <class name="TestScripts.FavouriteTest">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:20 IST" name="startServer" finished-at="2023-12-21T11:24:21 IST" duration-ms="199" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startServer -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:38 IST" name="startApp" finished-at="2023-12-21T10:56:49 IST" duration-ms="11357" status="PASS">
+=======
+        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:21 IST" name="startApp" finished-at="2023-12-21T11:24:32 IST" duration-ms="11187" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:49 IST" name="login" finished-at="2023-12-21T10:57:01 IST" duration-ms="12378" status="PASS">
+=======
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:32 IST" name="login" finished-at="2023-12-21T11:24:43 IST" duration-ms="11640" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="tc4()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:01 IST" name="tc4" finished-at="2023-12-21T10:57:45 IST" duration-ms="44037" status="PASS">
+=======
+        <test-method signature="favourite()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:43 IST" name="favourite" finished-at="2023-12-21T11:25:12 IST" duration-ms="28183" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- tc4 -->
         <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:45 IST" name="closeApp" finished-at="2023-12-21T10:57:46 IST" duration-ms="526" status="PASS">
+=======
+        </test-method> <!-- favourite -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:25:12 IST" name="closeApp" finished-at="2023-12-21T11:25:12 IST" duration-ms="508" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:46 IST" name="stopServer" finished-at="2023-12-21T10:57:46 IST" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:25:12 IST" name="stopServer" finished-at="2023-12-21T11:25:12 IST" duration-ms="62" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
+<<<<<<< HEAD
       </class> <!-- TestScripts.testscript1 -->
+=======
+      </class> <!-- TestScripts.FavouriteTest -->
+>>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

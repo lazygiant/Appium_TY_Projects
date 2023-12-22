@@ -20,6 +20,7 @@ import com.objectRepo.PopularcategoryPage;
 import com.objectRepo.ProductPage;
 import com.objectRepo.SearchPage;
 import com.objectRepo.SustainabilityPage;
+import com.objectRepo.VerificationPage;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -43,13 +44,14 @@ public class BaseClass {
 	public PopularcategoryPage pcp;
 	public ProductPage pp;
 	public NavigationPage np;
+	public VerificationPage vp;
 	
 	
 	@BeforeSuite
 	public void startServer() {
 		
-	File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
-	 //File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
+	//File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
+	File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
  	
 		
 		service = new AppiumServiceBuilder().withAppiumJS(f).
@@ -67,11 +69,11 @@ public class BaseClass {
 		String automation = futil.dataFromPropertyFile("AUTOMATION_NAME");
 		
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
-		//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy M32 5G");
+		//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy M32 5G");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
-		dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
-		//dc.setCapability(MobileCapabilityType.UDID, "RZCRA06JH3F");
+		//dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
+		dc.setCapability(MobileCapabilityType.UDID, "RZCRA06JH3F");
 
 		
 		dc.setCapability("appPackage", "com.hm.goe");
@@ -94,6 +96,7 @@ public class BaseClass {
 		pcp=new PopularcategoryPage(driver);
 		pp=new ProductPage(driver);
 		np= new NavigationPage(driver);
+		vp=new VerificationPage(driver);
 	}
 	
 	@BeforeMethod
