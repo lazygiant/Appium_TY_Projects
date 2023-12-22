@@ -1,10 +1,8 @@
 package TestScripts;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import GenericUtilities.BaseClass;
-import io.appium.java_client.AppiumBy;
 
 public class FavouriteTest extends BaseClass
 {
