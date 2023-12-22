@@ -1,76 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+<testng-results ignored="10" total="13" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-12-21T10:56:38 IST" name="Default suite" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
-=======
-  <suite started-at="2023-12-21T11:24:21 IST" name="Default suite" finished-at="2023-12-21T11:25:12 IST" duration-ms="51578">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+  <suite started-at="2023-12-22T11:38:44 IST" name="Suite" finished-at="2023-12-22T11:38:44 IST" duration-ms="49">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2023-12-21T10:56:38 IST" name="Default test" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
-      <class name="TestScripts.testscript1">
-        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:37 IST" name="startServer" finished-at="2023-12-21T10:56:38 IST" duration-ms="145" status="PASS">
-=======
-    <test started-at="2023-12-21T11:24:21 IST" name="Default test" finished-at="2023-12-21T11:25:12 IST" duration-ms="51578">
-      <class name="TestScripts.FavouriteTest">
-        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:20 IST" name="startServer" finished-at="2023-12-21T11:24:21 IST" duration-ms="199" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startServer -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:38 IST" name="startApp" finished-at="2023-12-21T10:56:49 IST" duration-ms="11357" status="PASS">
-=======
-        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:21 IST" name="startApp" finished-at="2023-12-21T11:24:32 IST" duration-ms="11187" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+    <test started-at="2023-12-22T11:38:44 IST" name="Test" finished-at="2023-12-22T11:38:44 IST" duration-ms="49">
+      <class name="TestScripts.CartTest">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.CartTest@121314f7]" started-at="2023-12-22T11:38:44 IST" name="startApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324616" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:49 IST" name="login" finished-at="2023-12-21T10:57:01 IST" duration-ms="12378" status="PASS">
-=======
-        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:32 IST" name="login" finished-at="2023-12-21T11:24:43 IST" duration-ms="11640" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.CartTest@121314f7]" started-at="2023-12-22T11:38:44 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324618" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="tc4()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:01 IST" name="tc4" finished-at="2023-12-21T10:57:45 IST" duration-ms="44037" status="PASS">
-=======
-        <test-method signature="favourite()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:24:43 IST" name="favourite" finished-at="2023-12-21T11:25:12 IST" duration-ms="28183" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+        <test-method signature="cartmoduletest()[pri:0, instance:TestScripts.CartTest@121314f7]" started-at="2023-12-22T11:38:44 IST" name="cartmoduletest" finished-at="2023-12-22T11:38:44 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js'
+at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:128)
+at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:291)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:358)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:463)
+at GenericUtilities.BaseClass.startServer(BaseClass.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- tc4 -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:45 IST" name="closeApp" finished-at="2023-12-21T10:57:46 IST" duration-ms="526" status="PASS">
-=======
-        </test-method> <!-- favourite -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:25:12 IST" name="closeApp" finished-at="2023-12-21T11:25:12 IST" duration-ms="508" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+        </test-method> <!-- cartmoduletest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.CartTest@121314f7]" started-at="2023-12-22T11:38:44 IST" name="closeApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324623" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:46 IST" name="stopServer" finished-at="2023-12-21T10:57:46 IST" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.FavouriteTest@4803b726]" started-at="2023-12-21T11:25:12 IST" name="stopServer" finished-at="2023-12-21T11:25:12 IST" duration-ms="62" status="PASS">
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
+      </class> <!-- TestScripts.CartTest -->
+      <class name="TestScripts.InboxTest">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.InboxTest@130c12b7]" started-at="2023-12-22T11:38:44 IST" name="startApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324624" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.InboxTest@130c12b7]" started-at="2023-12-22T11:38:44 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324625" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="tc3()[pri:0, instance:TestScripts.InboxTest@130c12b7]" started-at="2023-12-22T11:38:44 IST" name="tc3" finished-at="2023-12-22T11:38:44 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js'
+at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:128)
+at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:291)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:358)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:463)
+at GenericUtilities.BaseClass.startServer(BaseClass.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.InboxTest@130c12b7]" started-at="2023-12-22T11:38:44 IST" name="closeApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324628" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- TestScripts.InboxTest -->
+      <class name="TestScripts.FavouriteTest">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="startServer" finished-at="2023-12-22T11:38:44 IST" duration-ms="49" status="FAIL">
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js'
+at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:128)
+at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:291)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:358)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:463)
+at GenericUtilities.BaseClass.startServer(BaseClass.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="startApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324599" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324609" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="favourite()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="favourite" finished-at="2023-12-22T11:38:44 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'C:\Users\sys\AppData\Roaming\npm\node_modules\appium\build\lib\main.js'
+at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:128)
+at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:291)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:358)
+at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:463)
+at GenericUtilities.BaseClass.startServer(BaseClass.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- favourite -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="closeApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324615" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.FavouriteTest@242b836]" started-at="2023-12-22T11:38:44 IST" name="stopServer" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1703225324732" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-<<<<<<< HEAD
-      </class> <!-- TestScripts.testscript1 -->
-=======
       </class> <!-- TestScripts.FavouriteTest -->
->>>>>>> branch 'master' of https://github.com/Madhumithajaganath/HnM.git
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
