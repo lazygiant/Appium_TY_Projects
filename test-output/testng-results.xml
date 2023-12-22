@@ -1,108 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-21T10:41:17 IST" name="Default suite" finished-at="2023-12-21T10:42:21 IST" duration-ms="63668">
+  <suite started-at="2023-12-21T10:56:38 IST" name="Default suite" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
     <groups>
     </groups>
-    <test started-at="2023-12-21T10:41:17 IST" name="Default test" finished-at="2023-12-21T10:42:21 IST" duration-ms="63668">
-      <class name="TestScripts.CartTest">
-        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:41:17 IST" name="startServer" finished-at="2023-12-21T10:41:17 IST" duration-ms="135" status="PASS">
+    <test started-at="2023-12-21T10:56:38 IST" name="Default test" finished-at="2023-12-21T10:57:46 IST" duration-ms="68341">
+      <class name="TestScripts.testscript1">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:37 IST" name="startServer" finished-at="2023-12-21T10:56:38 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startServer -->
-        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:41:17 IST" name="startApp" finished-at="2023-12-21T10:41:28 IST" duration-ms="10609" status="PASS">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:38 IST" name="startApp" finished-at="2023-12-21T10:56:49 IST" duration-ms="11357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:41:28 IST" name="login" finished-at="2023-12-21T10:41:39 IST" duration-ms="11591" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:56:49 IST" name="login" finished-at="2023-12-21T10:57:01 IST" duration-ms="12378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="cartmoduletest()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:41:39 IST" name="cartmoduletest" finished-at="2023-12-21T10:42:20 IST" duration-ms="40752" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [72517ade-20b0-4d46-b232-1298cd2a1699, findElement {using=xpath, value=//android.widget.FrameLayout[@content-desc='pdp_add_to_bag_new']}]
-Capabilities {appium:appActivity: .app.home.HomeActivity, appium:appPackage: com.hm.goe, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .app.home.HomeActivity, appPackage: com.hm.goe, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 72517ade-20b0-4d46-b232-1298cd2a1699]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [72517ade-20b0-4d46-b232-1298cd2a1699, findElement {using=xpath, value=//android.widget.FrameLayout[@content-desc='pdp_add_to_bag_new']}]
-Capabilities {appium:appActivity: .app.home.HomeActivity, appium:appPackage: com.hm.goe, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .app.home.HomeActivity, appPackage: com.hm.goe, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 72517ade-20b0-4d46-b232-1298cd2a1699
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.objectRepo.ProductPage.addtocart(ProductPage.java:42)
-at TestScripts.CartTest.cartmoduletest(CartTest.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc4()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:01 IST" name="tc4" finished-at="2023-12-21T10:57:45 IST" duration-ms="44037" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cartmoduletest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:42:20 IST" name="closeApp" finished-at="2023-12-21T10:42:21 IST" duration-ms="684" status="PASS">
+        </test-method> <!-- tc4 -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:45 IST" name="closeApp" finished-at="2023-12-21T10:57:46 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.CartTest@73e9cf30]" started-at="2023-12-21T10:42:21 IST" name="stopServer" finished-at="2023-12-21T10:42:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:TestScripts.testscript1@242b836]" started-at="2023-12-21T10:57:46 IST" name="stopServer" finished-at="2023-12-21T10:57:46 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-      </class> <!-- TestScripts.CartTest -->
+      </class> <!-- TestScripts.testscript1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

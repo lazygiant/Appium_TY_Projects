@@ -1,6 +1,5 @@
 package com.objectRepo;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -8,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import GenericUtilities.GestureUtility;
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
 public class SustainabilityPage {
@@ -19,7 +17,7 @@ public class SustainabilityPage {
 		this.driver=driver;
 		PageFactory.initElements( driver, this);
 	}
-	
+			
 	@FindBy(xpath = "(//android.widget.ImageButton)[1]")
 	private WebElement option;
 	
@@ -56,11 +54,11 @@ public class SustainabilityPage {
 //			gutil.scrollToText("Let's take care");
 //			System.out.println(head.getText());
 //		}
-		//gutil.scrollToText("Let's take care");
-		//gutil.scrollToId("com.hm.goe:id/editorialTextHeadline");
-		for(int i=0;i<count;i++) {
+//		gutil.scrollToText("Let's take care");
+//		gutil.scrollToId("com.hm.goe:id/editorialTextHeadline");
+		while (true) {
 			gutil.scrollToId("com.hm.goe:id/editorialTextHeadline");
-			String head = heading.get(i).getText();
+			String head = heading.get(count).getText();
 			System.out.println(head);
 			count=heading.size();
 			count++;

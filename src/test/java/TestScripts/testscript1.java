@@ -15,4 +15,14 @@ public class testscript1 extends BaseClass{
 	public void tc2() {
 		susp.sustainability(gutil);
 	}
+	
+	@Test
+	public void tc3() {
+		ip.inbox();
+	}
+	
+	@Test
+	public void tc4() {
+		fup.followUs(dutil);
+	}
 }

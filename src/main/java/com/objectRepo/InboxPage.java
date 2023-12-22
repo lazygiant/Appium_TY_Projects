@@ -11,6 +11,7 @@ public class InboxPage {
 	AndroidDriver driver;
 	public InboxPage(AndroidDriver driver) {
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath  = "//android.widget.TextView[@text='Inbox']")
 	private WebElement inbox;
