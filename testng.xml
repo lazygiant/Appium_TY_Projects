@@ -6,9 +6,9 @@
       <class name="TestScripts.FavouriteTest"/>
       <class name="TestScripts.CartTest"/>
       <class name="TestScripts.InboxTest"/>
-      <class name="TestScripts.FollowUsTest"></class>
-      <class name="TestScripts.SearchTest"></class>
-      <class name="TestScripts.SustainTest"></class>
+      <class name="TestScripts.FollowUsTest"/>
+      <class name="TestScripts.SearchTest"/>
+      <class name="TestScripts.SustainTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

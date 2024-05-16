@@ -22,12 +22,6 @@ public class CartPage {
 	@FindBy(xpath="//android.widget.ImageView[@content-desc='Move to Favourites']")
 	private WebElement movetoFavorites;
 	
-	
-	public CartPage(AndroidDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements( driver, this);
-	}
-	
 	public WebElement getSize() {
 		return size;
 	}
@@ -44,11 +38,17 @@ public class CartPage {
 		return movetoFavorites;
 	}
 
+	public CartPage(AndroidDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements( driver, this);
+	}
+	
 	public void cart() {
 		size.click();
 		addBtn.click();
 		bag.click();
 	}
+	
 	public void movetofav()
 	{
 		movetoFavorites.click();

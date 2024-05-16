@@ -9,10 +9,12 @@ import io.appium.java_client.android.AndroidDriver;
 public class InboxPage {
 
 	AndroidDriver driver;
-	public InboxPage(AndroidDriver driver) {
+	public InboxPage(AndroidDriver driver) 
+	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	@FindBy(xpath  = "//android.widget.TextView[@text='Inbox']")
 	private WebElement inbox;
 	
@@ -40,6 +42,5 @@ public class InboxPage {
 		inbox.click();
 		String msg = message.getText();
 		System.out.println(msg);
-		
 	}
 }

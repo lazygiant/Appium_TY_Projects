@@ -51,7 +51,7 @@ AndroidDriver driver;
 		
 	}
 	
-	public void swipe(WebElement element, double percentage, int left, int top, int height, int width, String direction) {
+	public void swipe(double percentage, int left, int top, int height, int width, String direction) {
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of
 			("left", left, "top", top, "width", width, "height", height,
 			    "direction", direction,"percent", percentage

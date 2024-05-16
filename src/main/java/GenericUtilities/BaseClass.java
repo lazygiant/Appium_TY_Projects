@@ -4,8 +4,11 @@ import java.io.File;
 import java.net.URL;
 import java.time.Duration;
 
+import javax.print.DocFlavor.STRING;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -50,8 +53,8 @@ public class BaseClass {
 	@BeforeSuite
 	public void startServer() {
 		
-	//File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
-	File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
+	File f = new File("C:\\Users\\HI\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js");
+	//File f=new File("C:\\Users\\sys\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
  	
 		
 		service = new AppiumServiceBuilder().withAppiumJS(f).
@@ -67,17 +70,19 @@ public class BaseClass {
 		
 		String platform = futil.dataFromPropertyFile("PLATFORM_NAME");
 		String automation = futil.dataFromPropertyFile("AUTOMATION_NAME");
-		
+		String packageName = futil.dataFromPropertyFile("APP_PACKAGE");
+		String activity = futil.dataFromPropertyFile("APP_ACTIVITY");
+		String device = futil.dataFromPropertyFile("DEVICE_NAME");
+		String UDID = futil.dataFromPropertyFile("UDID");
+
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
-		//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy M32 5G");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
-		//dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
-		dc.setCapability(MobileCapabilityType.UDID, "RZCRA06JH3F");
+		dc.setCapability(MobileCapabilityType.UDID, UDID);
 
 		
-		dc.setCapability("appPackage", "com.hm.goe");
-		dc.setCapability("appActivity", ".app.home.HomeActivity");
+		dc.setCapability("appPackage", packageName);
+		dc.setCapability("appActivity", activity);
 		
 		URL u = new URL("http://localhost:4723");
 		driver = new AndroidDriver(u,dc);
@@ -105,8 +110,15 @@ public class BaseClass {
 	}
 	
 	@AfterClass
-	public void closeApp() {
-		driver.quit();
+	public void closeApp() throws Throwable {
+		String packageName = futil.dataFromPropertyFile("APP_PACKAGE");
+		driver.terminateApp(packageName);
+	}
+	
+	@AfterMethod
+	public void uninstall() throws Throwable {
+		String packageName = futil.dataFromPropertyFile("APP_PACKAGE");
+		driver.removeApp(packageName);
 	}
 	
 	@AfterSuite
