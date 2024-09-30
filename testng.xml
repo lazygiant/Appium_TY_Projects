@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="drivers.ParallelTest"/>
+      <parameter name="deviceName" value="OPPO F19s"></parameter>
+      <parameter name="UDID" value="79da6ca0"></parameter>
+      <parameter name="port" value="4723"></parameter>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+    <classes>
+      <class name="drivers.ParallelTest"/>
+      <parameter name="deviceName" value="Redmi Note 8"></parameter>
+      <parameter name="UDID" value="16534284"></parameter>
+      <parameter name="port" value="4724"></parameter>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
